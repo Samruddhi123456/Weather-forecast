@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Vista Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/7a4b62b0a4.js"
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- TOP BAR -->
+
+    <div class="top-bar">
+
+        <h1>
+            🌤 Weather Vista
+        </h1>
+
+        <button class="theme-btn"
+                onclick="toggleTheme()">
+
+            🌙 Theme
+
+        </button>
+
+    </div>
+
+    <!-- MAIN WEATHER CARD -->
+
+    <div class="weather-box">
+
+        <h2>
+            Real-Time Weather Forecast
+        </h2>
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input type="text"
+                   id="city"
+                   placeholder="📍 Enter City Name">
+
+            <button onclick="getWeather()">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+        <!-- CURRENT WEATHER -->
+
+        <div class="weather-card">
+
+            <h2 id="cityName">
+                Nagpur
+            </h2>
+
+            <img id="weatherIcon">
+
+            <p id="temp">
+                🌡 Temperature : -- °C
+            </p>
+
+            <p id="humidity">
+                💧 Humidity : --%
+            </p>
+
+            <p id="wind">
+                🌬 Wind Speed : -- km/h
+            </p>
+
+            <p id="pressure">
+                📊 Pressure : -- hPa
+            </p>
+
+            <p id="condition">
+                ☁ Condition : --
+            </p>
+
+        </div>
+
+        <!-- AQI -->
+
+        <div class="aqi-card">
+
+            <h3>
+                🌫 Air Quality Index
+            </h3>
+
+            <p id="aqi">
+                AQI : --
+            </p>
+
+        </div>
+
+        <!-- FORECAST -->
+
+        <h2 class="forecast-title">
+
+            📅 5 Day Forecast
+
+        </h2>
+
+        <div id="forecastContainer">
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
